@@ -1,0 +1,8 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Colours" "${PODS_ROOT}/Headers/Public/RBQFetchedResultsController" "${PODS_ROOT}/Headers/Public/RBQSafeRealmObject" "${PODS_ROOT}/Headers/Public/Realm" "${PODS_ROOT}/Headers/Public/RealmUtilities"
+LIBRARY_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/Colours" "$PODS_CONFIGURATION_BUILD_DIR/RBQFetchedResultsController" "$PODS_CONFIGURATION_BUILD_DIR/RBQSafeRealmObject" "$PODS_CONFIGURATION_BUILD_DIR/Realm" "$PODS_CONFIGURATION_BUILD_DIR/RealmUtilities" $(inherited) "${PODS_ROOT}/Realm/core"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/Colours" -isystem "${PODS_ROOT}/Headers/Public/RBQFetchedResultsController" -isystem "${PODS_ROOT}/Headers/Public/RBQSafeRealmObject" -isystem "${PODS_ROOT}/Headers/Public/Realm" -isystem "${PODS_ROOT}/Headers/Public/RealmUtilities"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"Colours" -l"RBQFetchedResultsController" -l"RBQSafeRealmObject" -l"Realm" -l"RealmUtilities" -l"c++" -l"realm-ios" -l"z"
+PODS_BUILD_DIR = $BUILD_DIR
+PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_ROOT = ${SRCROOT}/Pods

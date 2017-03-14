@@ -1,0 +1,31 @@
+PODS:
+  - Colours (5.6.2)
+  - RBQFetchedResultsController (5.0.2):
+    - RBQSafeRealmObject
+    - Realm (>= 1.0.0)
+    - RealmUtilities
+  - RBQSafeRealmObject (1.1):
+    - Realm (>= 0.99.1)
+    - RealmUtilities (>= 0.2.1)
+  - Realm (2.4.4):
+    - Realm/Headers (= 2.4.4)
+  - Realm/Headers (2.4.4)
+  - RealmUtilities (0.4):
+    - Realm (>= 0.95)
+
+DEPENDENCIES:
+  - Colours (= 5.6.2)
+  - RBQFetchedResultsController
+  - Realm
+  - Realm/Headers
+
+SPEC CHECKSUMS:
+  Colours: 0afd4c3429656880fd4cff350ca3bf0ab86ca348
+  RBQFetchedResultsController: 24877a429680be6d22709a2e527bcb766877bf4e
+  RBQSafeRealmObject: 128e6ece2acceeb7dea9d00b8fa40ba4c489c3fa
+  Realm: 5a280a1f5a9a3c267bebf4f41ee47911137703d7
+  RealmUtilities: bd4d18141e62a6cdcfa1859f1f090a27ab282628
+
+PODFILE CHECKSUM: da9408c74173b78807b1d2ab69d6b367bc4d7d9c
+
+COCOAPODS: 1.2.0

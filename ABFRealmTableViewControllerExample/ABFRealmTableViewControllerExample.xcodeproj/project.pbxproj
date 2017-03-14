@@ -177,12 +177,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0810CC11B72B21B00CA4D98 /* Build configuration list for PBXNativeTarget "ABFRealmTableViewControllerExample" */;
 			buildPhases = (
-				FCD626C65C423D7580EEBDCA /* Check Pods Manifest.lock */,
+				FCD626C65C423D7580EEBDCA /* [CP] Check Pods Manifest.lock */,
 				A0810C9A1B72B21B00CA4D98 /* Sources */,
 				A0810C9B1B72B21B00CA4D98 /* Frameworks */,
 				A0810C9C1B72B21B00CA4D98 /* Resources */,
-				1CF302EBC51FF23EC69EF7C1 /* Copy Pods Resources */,
-				9564CF8E6E8662B7BC03D9DA /* Embed Pods Frameworks */,
+				1CF302EBC51FF23EC69EF7C1 /* [CP] Copy Pods Resources */,
+				9564CF8E6E8662B7BC03D9DA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -197,12 +197,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0810CC41B72B21B00CA4D98 /* Build configuration list for PBXNativeTarget "ABFRealmTableViewControllerExampleTests" */;
 			buildPhases = (
-				7BEA1AA13216A75A58E7CE34 /* Check Pods Manifest.lock */,
+				7BEA1AA13216A75A58E7CE34 /* [CP] Check Pods Manifest.lock */,
 				A0810CB31B72B21B00CA4D98 /* Sources */,
 				A0810CB41B72B21B00CA4D98 /* Frameworks */,
 				A0810CB51B72B21B00CA4D98 /* Resources */,
-				6CE9A1E2D743B74D80690AB6 /* Copy Pods Resources */,
-				0DE7D47EF4D4C5D120BC5C42 /* Embed Pods Frameworks */,
+				6CE9A1E2D743B74D80690AB6 /* [CP] Copy Pods Resources */,
+				0DE7D47EF4D4C5D120BC5C42 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -272,14 +272,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0DE7D47EF4D4C5D120BC5C42 /* Embed Pods Frameworks */ = {
+		0DE7D47EF4D4C5D120BC5C42 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,14 +287,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ABFRealmTableViewControllerExampleTests/Pods-ABFRealmTableViewControllerExampleTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		1CF302EBC51FF23EC69EF7C1 /* Copy Pods Resources */ = {
+		1CF302EBC51FF23EC69EF7C1 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,14 +302,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ABFRealmTableViewControllerExample/Pods-ABFRealmTableViewControllerExample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6CE9A1E2D743B74D80690AB6 /* Copy Pods Resources */ = {
+		6CE9A1E2D743B74D80690AB6 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,29 +317,29 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ABFRealmTableViewControllerExampleTests/Pods-ABFRealmTableViewControllerExampleTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7BEA1AA13216A75A58E7CE34 /* Check Pods Manifest.lock */ = {
+		7BEA1AA13216A75A58E7CE34 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		9564CF8E6E8662B7BC03D9DA /* Embed Pods Frameworks */ = {
+		9564CF8E6E8662B7BC03D9DA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,19 +347,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ABFRealmTableViewControllerExample/Pods-ABFRealmTableViewControllerExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FCD626C65C423D7580EEBDCA /* Check Pods Manifest.lock */ = {
+		FCD626C65C423D7580EEBDCA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

@@ -23,6 +23,18 @@
 
 @implementation MainTableViewController
 
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+	self = [super initWithCoder:aDecoder];
+	NSLog(@"%s %p", __PRETTY_FUNCTION__, self);
+	return self;
+}
+
+- (void)dealloc
+{
+	NSLog(@"%s %p", __PRETTY_FUNCTION__, self);
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     

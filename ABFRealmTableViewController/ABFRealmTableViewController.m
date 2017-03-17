@@ -77,6 +77,13 @@
     [self updateFetchedResultsController];
 }
 
+- (void) viewDidDisappear:(BOOL)animated
+{
+	[super viewDidDisappear:animated];
+	
+	[self.fetchedResultsController reset];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

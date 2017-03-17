@@ -158,11 +158,7 @@
                                               andPerformFetch:YES];
             
             if (self.isViewLoaded) {
-                typeof(self) __weak weakSelf = self;
-                
-                [self runOnMainThread:^{
-                    [weakSelf.tableView reloadData];
-                }];
+                [self.tableView performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:YES];
             }
         }
     }
@@ -185,18 +181,6 @@
     }
     
     return nil;
-}
-
-- (void)runOnMainThread:(void (^)())block
-{
-    if ([NSThread isMainThread]) {
-        block();
-    }
-    else {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            block();
-        });
-    }
 }
 
 #pragma mark - <UITableViewDataSource>
